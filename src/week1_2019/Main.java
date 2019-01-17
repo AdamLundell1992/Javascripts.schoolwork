@@ -3,7 +3,9 @@ package week1_2019;
 /**
  * Created by u1853373 on 17/01/2019.
  */
-public class Main {
+    //3rd and main class,creating the game results and names of the team
+    //and name of the league"theleague"
+    public class Main {
     public static void main(String[] args) {
         SuperLeague theLeague = new SuperLeague();
         Team wigan = new Team("Wigan Warriors");
@@ -18,14 +20,14 @@ public class Main {
         hull.playMatch(0,34);
         leeds.playMatch(10,10);
         wigan.playMatch(10,10);
-
+        //adding the teams
 
         theLeague.addTeam(wigan);
         theLeague.addTeam(leeds);
         theLeague.addTeam(hudds);
         theLeague.addTeam(hull);
         theLeague.printLeague();
-
+        //printing the league
 
     }
 }
