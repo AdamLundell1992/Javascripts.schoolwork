@@ -60,30 +60,29 @@ public class Diary {
         Collections.sort (this.jobs);
 
    }
-// This Arraylists name is "returnList" And the if inside means that if the jobname
-// cointains the word you type in (lowercase will just make so the word you type in can be lover)
-// If the word "or the letter" is found the "jobname" arraylist- "returnList" will add the
-// return the job.
-   public ArrayList<Job> searchDiary(String word){
-       ArrayList<Job> returnList = new ArrayList<>(0);
-       boolean found = false;
-       for (Job job : jobs){
-           if(job.getDescription().toLowerCase().contains(word.toLowerCase())){
-               //System.out.println(job.getDescription() + " contains " + word);
-               returnList.add(job);
-               found = true;
-           }
-       }
-       // if the returnList is empty it will return null else it will return the Arraylist
-       // called "returnList"
-       if(returnList.isEmpty()){
-           return null;
-       }else{
-           return returnList;
-       }
+    // method returns an arraylist of all job which contain the search term
+    public ArrayList<Job> searchDiary(String word) {
+        //a temporary / local arraylist which holds any jobs witch contain search word
+        ArrayList<Job> returnList = new ArrayList<>(0);
+        //loop through the jobs arraylist
+        for (Job job : jobs) {
+            //check if the sreachword is in the job description
+            if (job.getDescription().toLowerCase().contains(word.toLowerCase())) {
+                //System.out.println(job.getDescription() + " contains " + word);
+                //if found then add to the return array list
+                returnList.add(job);
 
-   }
+            }
+        }
+        // if the returnList is empty it will return null else it will return the Arraylist
 
+        // called "returnList" SPOT ON!!!
+        if (returnList.isEmpty()) {
+            return null;
+        } else {
+            return returnList;
+        }
+    }
 
     public static void main(String[] args) {
         Diary diary = new Diary();
@@ -99,7 +98,6 @@ public class Diary {
                 "description",
                 "Priority",
                 "Completed")));
-
 
         System.out.println("");
         j1.setCompleted();
@@ -119,9 +117,9 @@ public class Diary {
         final String formatString2 = "%-8s %15s %12s";
         //here i printed out the names on the board.over the numbers
         System.out.println( (String.format (formatString2,
-                "description" ,
+                "description",
                 "Priority",
-                "Completed"))) ;
+                "Completed")));
         System.out.println("");
         diary.printCompletedJobs();
         // "The scanner class" it reads a string and search for the word.
@@ -133,7 +131,8 @@ public class Diary {
         // diary and print out the job.
         ArrayList<Job> returnList = diary.searchDiary(searchWord);
         if(returnList != null){
-            for(Job job : diary.searchDiary(searchWord)){
+            //print all jobs in the retrurnList
+            for(Job job : returnList){ //we should have changed the loop to loop the returnList this morning.
                 System.out.println(job);
             }
             // Else it will print this "You search term did not find a match"
