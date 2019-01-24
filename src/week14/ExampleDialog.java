@@ -18,6 +18,7 @@ import javax.swing.*;
 
 
 class ExampleDialog extends Stage {
+
     // A class to demonstrate both custom dialogs and a range of JavaFX components
 
     private HBox makeSelectionBox;

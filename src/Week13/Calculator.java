@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 
 public class Calculator extends Application {
 
+
     public static void main(String[] args) {
         launch(args);
     }

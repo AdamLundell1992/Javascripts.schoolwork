@@ -16,6 +16,7 @@ import java.util.Optional;
 
 
 public class JavaFXMenuDemo extends Application {
+
     // A class to demo JavaFX menus, information alerts, and custom dialogs
 
     private MenuBar menuBar;
