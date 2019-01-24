@@ -6,6 +6,7 @@ package week2_2019;
 // Class name and implements Comparable i use to sort the Priority list.look down in this code
 public class Job implements Comparable <Job> {
 
+
 // Attributes
     private String description;
     private int priority;

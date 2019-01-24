@@ -100,6 +100,7 @@ public class Diary {
                 "Priority",
                 "Completed")));
 
+
         System.out.println("");
         j1.setCompleted();
         diary.addJob(j1);
@@ -118,9 +119,9 @@ public class Diary {
         final String formatString2 = "%-8s %15s %12s";
         //here i printed out the names on the board.over the numbers
         System.out.println( (String.format (formatString2,
-                "description",
+                "description" ,
                 "Priority",
-                "Completed")));
+                "Completed"))) ;
         System.out.println("");
         diary.printCompletedJobs();
         // "The scanner class" it reads a string and search for the word.
