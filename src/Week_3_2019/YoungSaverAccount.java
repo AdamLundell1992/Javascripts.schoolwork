@@ -14,6 +14,9 @@ public class YoungSaverAccount extends DepositAccount {
 // YoungsaverAccount-Depositaccount-Account so it will work fine. And now i got 2 Super classes Account and Depositaccount
 // but that is no problem. Actually deposit is a superclass for Youngsavers account and a subclass to account class
 // so it works like a connection.
+// I have change it now so if you look AGAIN my youngsavers account and student account are subclasses of deposit account
+// becouse i need the intrestrate rate method inn  all classes eccept my Current Account class still works becouse
+// youngsaveacc and student acc - deposit account - account so it have apath
 
     @Override
     public boolean deposit(int amount) {
