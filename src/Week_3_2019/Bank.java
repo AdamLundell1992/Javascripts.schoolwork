@@ -13,6 +13,9 @@ public class Bank {
     }
 
     private ArrayList <Account> accounts = new ArrayList <>();
+    {
+
+    }
     //Arraylist for the accounts.
 
      // method for add acounts
@@ -43,7 +46,16 @@ public class Bank {
         }
 
     }
+    //As in the christmas club when we did the turkeys i borrowed this as a model. But looped through
+    // my accounts to get the total balance.
+    public  double totalBalance() {
+        double balance = 0.0;
+        for (Account a : accounts) {
+            balance += a.getBalance();
+        }
 
+        return  balance;
+    }
 
     public static void main(String[] args) {
 
@@ -71,6 +83,9 @@ public class Bank {
         a4.deposit(110);
         a4.deposit(80);
         bank.printBank();
+        bank.totalBalance();
+        System.out.println("The total Balance is: " +bank.totalBalance());
+
 
 
 
