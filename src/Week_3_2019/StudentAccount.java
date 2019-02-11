@@ -3,7 +3,7 @@ import java.util.ArrayList;
 /**
  * Created by u1853373 on 07/02/2019.
  */
-public class StudentAccount extends Account {
+public class StudentAccount extends DepositAccount {
 
     private boolean overDraftLimit;
 

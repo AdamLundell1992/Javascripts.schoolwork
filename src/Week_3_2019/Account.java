@@ -72,16 +72,7 @@ public class Account {
 
     }
 
-    public boolean addInterest(int interestRate) {
-        if (interestRate > 0.0) {
-            this.balance += this.balance * (interestRate / 100.0);
-            return true;
-        } else {
 
-            System.out.println("you need a interest rate greater than 0");
-            return false;
-        }
-    }
     //This ToString are going to get all my attribute values from each class becouse i extended them.
     //Also made a formatstring to make it look better in the output.
         @Override

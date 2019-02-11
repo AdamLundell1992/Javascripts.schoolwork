@@ -18,6 +18,31 @@ public class DepositAccount extends Account {
 // and notice that i need to use getBalance and Setbalance inside my method it becouse this sublass work like that
 // must do it that way when we use innhertitance.
 
+
+
+
+    public boolean addInterest(double interestRate) {
+        if (interestRate > 0.0) {
+            double balance = getBalance();
+            double newBalance = balance +  (balance / 100.0 * interestRate);
+
+            if (balance > 0) {
+
+                this.setBalance(newBalance);
+                System.out.println("interest addede");
+                return true;
+            } else {
+                System.out.println("you need s balance greater than zero");
+                return false;
+            }
+
+        }else{
+            System.out.println("negative interdst rate");
+            return true;
+        }
+
+    }
+
     @Override
 
     public boolean withdraw(double amount) {
@@ -29,9 +54,6 @@ public class DepositAccount extends Account {
             return false;
         }
     }
-
-
-
 
 
 }
