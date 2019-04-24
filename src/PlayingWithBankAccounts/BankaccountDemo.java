@@ -1,6 +1,4 @@
-package week9;
-
-import org.omg.PortableInterceptor.AdapterManagerIdHelper;
+package PlayingWithBankAccounts;
 
 /**
  * Created by u1853373 on 06/12/2018.

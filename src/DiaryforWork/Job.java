@@ -1,4 +1,4 @@
-package week2_2019;
+package DiaryforWork;
 
 /**
  * Created by u1853373 on 22/01/2019.

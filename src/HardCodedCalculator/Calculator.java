@@ -1,4 +1,4 @@
-package Week13;/**
+package HardCodedCalculator;/**
  * Created by u1853373 on 14/01/2019.
  */
 

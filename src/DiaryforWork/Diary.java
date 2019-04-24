@@ -1,12 +1,8 @@
-package week2_2019;
-import javafx.scene.layout.Priority;
+package DiaryforWork;
 
-import java.time.format.SignStyle;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-
-import static week2_2019.Job.*;
 
 /**
  * Created by u1853373 on 22/01/2019.

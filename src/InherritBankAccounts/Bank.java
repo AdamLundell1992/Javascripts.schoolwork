@@ -1,4 +1,4 @@
-package Week_3_2019;
+package InherritBankAccounts;
 
 import java.util.ArrayList;
 

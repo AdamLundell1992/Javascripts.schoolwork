@@ -1,4 +1,4 @@
-package week9;
+package PlayingWithBankAccounts;
 
 /**
  * Created by u1853373 on 04/12/2018.

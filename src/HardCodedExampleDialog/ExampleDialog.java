@@ -1,4 +1,4 @@
-package week14;
+package HardCodedExampleDialog;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -8,8 +8,6 @@ import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
-import javax.swing.*;
 
 
 /**

@@ -1,4 +1,4 @@
-package week10;
+package ChristmasClub;
 
 /**
  * Created by u1853373 on 06/12/2018.

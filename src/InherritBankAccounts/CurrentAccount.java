@@ -1,5 +1,5 @@
-package Week_3_2019;
-import java.util.ArrayList;
+package InherritBankAccounts;
+
 /**
  * Created by u1853373 on 06/02/2019.
  */

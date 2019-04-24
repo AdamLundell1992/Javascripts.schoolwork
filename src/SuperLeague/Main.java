@@ -1,4 +1,4 @@
-package week1_2019;
+package SuperLeague;
 
 /**
  * Created by u1853373 on 17/01/2019.
